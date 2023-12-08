@@ -12,6 +12,12 @@
     "required": true
   },
   {
+    "id": "model_type",
+    "text": "What is the type of model?",
+    "type": "string",
+    "required": true
+  },
+  {
     "id": "url",
     "text": "What is the link to the tool?",
     "type": "string",
