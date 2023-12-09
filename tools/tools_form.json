@@ -12,10 +12,15 @@
     "required": true
   },
   {
-    "id": "model_type",
-    "text": "What is the type of model?",
-    "type": "string",
-    "required": true
+    "id": "primary_purpose",
+    "text": "What is the primary purpose of tool?",
+    "type": "array of tags",
+    "required": true,
+    "answers": [
+      "Research",
+      "Education and training",
+      "Decision support"
+    ]
   },
   {
     "id": "url",
