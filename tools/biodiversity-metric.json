@@ -19,7 +19,7 @@
 	"year_lastupdate": "2023",
 	"previous_versions_available": "Don't know",
 	"systems": "Agriculture, Forestry, Agroforestry, Nature/Wild, Urban",
-	"system_components": "Habitats, Crop, Tree",
+	"system_components": "Habitat, Crop, Tree",
 	"indicators": "Biodiversity",
 	"spatial_scales": "Plot, Farm, One-hectare, Landscape, Catchment",
 	"time_steps": "Ad hoc",
