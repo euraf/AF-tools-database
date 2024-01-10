@@ -24,6 +24,12 @@
     "required": true
   },
   {
+    "id": "demo_video",
+    "text": "What is the link to a demonstration video?",
+    "type": "string",
+    "required": false
+  },
+  {
     "id": "description_brief",
     "text": "Describe it briefly",
     "type": "string",
