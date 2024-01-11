@@ -93,10 +93,10 @@
   "url_documentation": "https://admin.ipsuisse.ch/secret/frmMain.aspx",
   "documentation_theoretical_background": "Yes",
   "documentation_theoretical_background_list": "www.doi.org/10.1016/j.agee.2014.08.008",
-  "data_provenance": "No",
-  "development_process": "No",
+  "data_provenance": "Don't know",
+  "development_process": "Don't know",
   "url_training_materials": "",
-  "documentation_contribute": "No",
+  "documentation_contribute": "Don't know",
   "digitaf_tool": "No",
   "digitaf_tool_ll": [
     ""
