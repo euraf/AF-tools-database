@@ -1,5 +1,11 @@
 [
   {
+    "id": "id",
+    "text": "ID (slug - exatcly the same used to name the .json file)",
+    "type": "string",
+    "required": true
+  },
+  {
     "id": "email",
     "text": "Email",
     "type": "email",
@@ -105,7 +111,9 @@
       "Perl",
       "Python",
       "R",
+      "React Native",
       "Ruby",
+      "Ruby on Rails",
       "TypeScript",
       "Visual Basic / VBScript",
       "Other..."
@@ -152,6 +160,7 @@
       "Creative Commons BY-ND",
       "Creative Commons BY-NC-ND",
       "Creative Commons Zero (CC0)",
+      "Proprietary",
       "Not stated",
       "Don't know",
       "Other..."
@@ -213,7 +222,7 @@
   },
   {
     "id": "indicators",
-    "text": "What indicators are assessed/modelled?",
+    "text": "What indicators are evaluated?",
     "short_text": "Indicators",
     "filter": 2,
     "type": "array of tags",
@@ -222,6 +231,7 @@
       "Growth",
       "Yield",
       "Biodiversity",
+      "Suitability",
       "Water",
       "Soil",
       "Carbon",
@@ -270,6 +280,7 @@
       "Daily",
       "Monthly",
       "Yearly",
+      "Not relevant",
       "Other..."
     ]
   },
@@ -606,7 +617,7 @@
     "text": "If applicable, in which Living Labs is it being tested?",
     "short_text": "Tested in DigitAF Living Labs",
     "filter": 3,
-    "type": "tag",
+    "type": "array of tags",
     "required": false,
     "answers": [
       "Czech Republic LL",
@@ -619,19 +630,13 @@
   },
   {
     "id": "digitaf_tool_demo_video",
-    "text": "If available, what is the link to this tool's demonstration video?",
+    "text": "If available, what is the link to this tool's demonstration video produced as part of the DigitAF project?",
     "type": "string",
     "required": false
   },
   {
     "id": "feedback_tool_info",
     "text": "Is there any relevant information about the tool that hasn't been collected in the previous questions?",
-    "type": "string",
-    "required": false
-  },
-  {
-    "id": "feedback_general",
-    "text": "Any suggestions about this questionnaire, or the Tools Database in general?",
     "type": "string",
     "required": false
   }

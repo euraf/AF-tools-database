@@ -108,6 +108,8 @@ module.exports = {
             "Python": 1,
             "R": 1,
             "Ruby": 1,
+            "Ruby on Rails": 1,
+            "React Native": 1,
             "TypeScript": 1,
             "Visual Basic / VBScript": 0.5,
             "Capsis platform": 1,
@@ -116,7 +118,8 @@ module.exports = {
           if (proglang in proglang_scores) {
             individual_score.push(proglang_scores[proglang])
           } else {
-            console.log(proglang + " not in I1 scoring list.")
+            console.log("[ " + tool.id + " ] Programming language [ " + proglang + " ] not in I1 scoring list.")
+            individual_score.push(0)
           }
         }
         
@@ -168,8 +171,7 @@ module.exports = {
     },
     calculateR(tool) {
       var R1 = 0
-      if (tool.license) {
-        R1 = {
+      var licenses = {
           "MIT License": 1,
           "Apache License 2.0": 1,
           "GNU General Public License (GPL)": 1,
@@ -180,9 +182,15 @@ module.exports = {
           "Creative Commons BY-ND": 0.2,
           "Creative Commons BY-NC-ND": 0.2,
           "Creative Commons Zero (CC0)": 1,
+          "Proprietary": 0,
           "Not stated": 0,
           "Don't know": 0
-        }[tool.license]
+        }
+
+      if (tool.license in licenses) {
+        R1 = licenses[tool.license]
+      } else {
+        console.log("[ " + tool.id + " ] License [ " + tool.license + " ] not in R1 scoring list.")
       }
 
       var R2 = 0
